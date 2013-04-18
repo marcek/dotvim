@@ -1,5 +1,8 @@
 scriptencoding utf-8
 
+call pathogen#incubate()
+call pathogen#helptags()
+
 " forget about vi
 set nocompatible
 
