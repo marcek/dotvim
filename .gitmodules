@@ -10,3 +10,15 @@
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = https://github.com/tpope/vim-surround.git
+[submodule "vim-markdown-folding"]
+	path = vim-markdown-folding
+	url = https://github.com/nelstrom/vim-markdown-folding.git
+[submodule "bundle/markdown-folding"]
+	path = bundle/markdown-folding
+	url = https://github.com/nelstrom/vim-markdown-folding.git
+[submodule "bundle/haml"]
+	path = bundle/haml
+	url = https://github.com/tpope/vim-haml.git
+[submodule "bundle/scss-syntax"]
+	path = bundle/scss-syntax
+	url = https://github.com/cakebaker/scss-syntax.vim.git

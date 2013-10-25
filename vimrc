@@ -3,6 +3,9 @@ scriptencoding utf-8
 call pathogen#incubate()
 call pathogen#helptags()
 
+" make backspace work like most other apps
+set backspace=2 
+
 " forget about vi
 set nocompatible
 
@@ -51,6 +54,9 @@ vmap < <gv
 " be faster with executing commands
 nnoremap ; :
 
+" toggle folds
+nnoremap <Space> za
+
 map <C-p> <C-PageUp> 
 map <C-n> <C-PageDown> 
 
@@ -61,3 +67,15 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 set tags=./tags;
+
+" Only do this part when compiled with support for autocommands
+if has("autocmd")
+  " Enable file type detection
+  filetype on
+
+  filetype plugin indent on
+   
+  " Syntax of these languages is fussy over tabs Vs spaces
+  autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab
+endif
+
